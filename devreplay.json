@@ -159,5 +159,16 @@
         "regex": true,
         "author":"GroupE",
         "description":"半角のスペースに統一してください"
+    },
+    {
+        "condition": [
+            "(^(//)+\w$)|(^(")+\w$)|(+\w+(")\z)"
+        ],
+        "consequent": [
+            " "
+        ],
+        "regex": true,
+        "author":"GroupE",
+        "description":"先頭には//を追加してください"
     }
 ]
